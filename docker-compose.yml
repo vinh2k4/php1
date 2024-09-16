@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  php-env:
+    build: .
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 9000:80
+  # mysql_db:
+  #   image: mysql:lastest
+  #   command: --default-authenication-plugins=mysql_native_password
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: vyngunhubo    
